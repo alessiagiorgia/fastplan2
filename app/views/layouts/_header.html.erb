@@ -1,0 +1,16 @@
+<header class="navbar-fixed">
+  <nav class="#c62828 red darken-3">
+    <div class="container nav-wrapper">
+      <%= link_to "fastplan", root_path, class: "brand-logo" %>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <%= link_to "ABOUT", about_path %>
+      </ul>
+    </div>
+  
+
+      <ul class="sidenav" id="mobile-demo">
+        <%= link_to "ABOUT", about_path %>
+      </ul>
+  </nav>
+</header>
