@@ -5,27 +5,25 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         
-
+        <li><%= link_to 'Vendi contenuto', new_content_path %></li>
         <% if user_signed_in? %>
-         <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete =%></li> 
+         <li><%= link_to "Log out", destroy_user_session_path, method: :delete =%></li> 
         <% else %>
-         <li><%= link_to "LOG IN", new_user_session_path =%></li>
-         <li><%= link_to "REGISTRAZIONE", new_user_registration_path =%></li>
+         <li><%= link_to "Log in", new_user_session_path =%></li>
+         <li><%= link_to "Registrazione", new_user_registration_path =%></li>
          <% end %>
        
       </ul>
-    </div>
-  
-
       <ul class="sidenav" id="mobile-demo">
         
-
+        <li><%= link_to 'Vendi contenuto', new_content_path %></li>
         <% if user_signed_in? %>
-         <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete =%></li> 
+         <li><%= link_to "Log out", destroy_user_session_path, method: :delete =%></li> 
         <% else %>
-         <li><%= link_to "LOG IN", new_user_session_path =%></li>
-         <li><%= link_to "REGISTRAZIONE", new_user_registration_path =%></li>
+         <li><%= link_to "Log in", new_user_session_path =%></li>
+         <li><%= link_to "Registrazione", new_user_registration_path =%></li>
          <% end %>
       </ul>
+    </div>
   </nav>
 </header>
