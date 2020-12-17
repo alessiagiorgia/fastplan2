@@ -15,10 +15,18 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'materialize-sass'
+
 gem 'devise'
+
 gem "paperclip"
+
 gem 'will_paginate'
+
 gem 'will_paginate-materialize'
+
+gem 'friendly_id'
+
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
